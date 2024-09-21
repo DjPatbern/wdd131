@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif, serif;
+  line-height: 1.6;
+  padding: 20px 40px;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #004e92;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+  transform: translateY(-3px); 
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.profile-container {
+  flex: 3;
+}
+
+.about-section,
+.location-section {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.profile-img,
+.country-flag {
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.web-resources {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.web-resources h2 {
+  margin-bottom: 15px;
+}
+
+.web-resources ul {
+  list-style: none;
+}
+
+.web-resources ul li {
+  margin-bottom: 10px;
+}
+
+.web-resources ul li a {
+  color: #004e92;
+  text-decoration: none;
+}
+
+.web-resources ul li a:hover {
+  color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: medium;
+  }
+
+  nav ul li a{
+    font-size: smaller;
+  }
+
+  .profile-container,
+  .web-resources {
+    width: 100%;
+  }
+
+  .about-section,
+  .location-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-img,
+  .country-flag {
+    max-width: 100%;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #004e92;
+  color: white;
+}
