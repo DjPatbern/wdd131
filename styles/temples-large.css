@@ -1,0 +1,18 @@
+#hamburger {
+    display: none;
+}
+
+#menu {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#temple-gallery {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+figure img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
