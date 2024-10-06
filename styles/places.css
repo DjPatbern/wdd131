@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #6C4DD6;
+    --secondary-color: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.weather::after {
+    content: '⛅'; /* Add pseudo-element for the wider view */
+    font-size: 24px;
+    display: block;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

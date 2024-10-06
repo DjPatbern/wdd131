@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagos</title>
+    <link rel="stylesheet" href="/styles/places.css">
+    <script src="scripts/places.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Discover Lagos</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-small.jpg" media="(min-width: 768px)">
+                <img src="images/hero-small.jpg" alt="Beautiful view of Lagos">
+            </picture>
+            <div class="weather">
+                <h2>Weather</h2>
+                <p>Temperature: 8°C</p>
+                <p>Wind Speed: 6 km/h</p>
+                <p>Wind Chill: <span id="windChill">N/A</span></p>
+                <!-- Icon here will be added dynamically based on view (SVG or emoticon) -->
+            </div>
+        </section>
+
+        <!-- Other sections for additional content -->
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span>. Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
