@@ -1,15 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Set current year in footer
     document.getElementById("year").textContent = new Date().getFullYear();
-    
-    // Set last modified date in footer
+
     document.getElementById("lastModified").textContent = document.lastModified;
 
-    // Weather variables
-    const temperature = 8; // Example static temperature in °C
-    const windSpeed = 6; // Example static wind speed in km/h
+    const temperature = 10; // Celsius
+    const windSpeed = 5; // km/h
 
-    // Wind chill calculation
     const windChillElement = document.getElementById("windChill");
     if (temperature <= 10 && windSpeed > 4.8) {
         const windChill = calculateWindChill(temperature, windSpeed);

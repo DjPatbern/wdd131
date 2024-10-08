@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lagos</title>
-    <link rel="stylesheet" href="/styles/places.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Victor Patrick">
+    <meta name="author" content="Victor Patrick">
+    <title>Nigeria</title>
+    <link rel="stylesheet" href="/styles/places.css" />
     <script src="scripts/places.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Discover Lagos</h1>
+      <h1>Nigeria</h1>
     </header>
 
     <main>
-        <section class="hero">
-            <picture>
-                <source srcset="images/hero-small.jpg" media="(min-width: 768px)">
-                <img src="images/hero-small.jpg" alt="Beautiful view of Lagos">
-            </picture>
-            <div class="weather">
-                <h2>Weather</h2>
-                <p>Temperature: 8°C</p>
-                <p>Wind Speed: 6 km/h</p>
-                <p>Wind Chill: <span id="windChill">N/A</span></p>
-                <!-- Icon here will be added dynamically based on view (SVG or emoticon) -->
-            </div>
-        </section>
+      <section class="hero">
+        <picture>
+          <source srcset="images/hero-large.jpg" class="large-img" media="(min-width: 768px)" />
+          <img src="images/hero-small.jpg" alt="Lemurs in Madagascar" />
+        </picture>
 
-        <!-- Other sections for additional content -->
+        <div class="data">
+          <h2>Data</h2>
+          <p>Area: 923,769 sq km</p>
+          <p>Population: 206,139,589</p>
+          <p>Capital: Abuja</p>
+          <p>Languages: English, Hausa, Yoruba, Igbo</p>
+          <p>Currency: Nigerian Naira</p>
+          <p>Time Zone: UTC+1</p>
+          <p>Calling Code: +234</p>
+          <p>Internet TLD: .ng</p>
+        </div>
+
+        <div class="weather">
+          <h2>Weather</h2>
+          <p>Temperature: 25°C</p>
+          <p>Conditions: Partly Cloudy</p>
+          <p>Wind: 12 km/h</p>
+          <p>Wind Chill: <span id="windChill">N/A</span></p>
+          <img id="weatherIconMobile" src="images/weather-icon.svg" alt="Weather icon">
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span>. Last modified: <span id="lastModified"></span></p>
+      <p>&copy; <span id="year"></span> Victor Patrick, Nigeria</p>
+      <p>Last modified: <span id="lastModified"></span></p>
     </footer>
-</body>
+  </body>
 </html>
