@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CayPoint Hospitals</title>
+  <meta
+    name="description"
+    content="WDD 131 - Project - Victor Patrick"
+  />
+  <meta name="author" content="Victor Patrick" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="scripts/form.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div>
+        <a href="index.html" class="logo">CayPoint</a>
+      </div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="hospitals.html">Hospitals</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <img src="images/womanhero.webp" alt="Health Center" loading="lazy" class="hero-image" />
+      <div class="hero-text">
+        <h1>Locate The Health Center, Closest To You</h1>
+        <p>
+          Are you a patient struggling to find a good hospital to get treatment?
+          Or perhaps you are new in a location and can not find a hospital for checkups?
+          <br />
+          <br />
+          Welcome to CayPoint, the game-changer in the world of Health Care.
+        </p>
+      </div>
+    </section>
+
+    <!-- Feedback Form -->
+    <section class="feedback">
+      <h2>We Value Your Feedback</h2>
+      <form id="feedbackForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required />
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required />
+
+        <label for="hospital">Hospital for Feedback Reference:</label>
+        <input type="text" id="hospital" name="hospital" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Feedback</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 CayPoint</p>
+  </footer>
+</body>
+</html>
+
+
+

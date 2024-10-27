@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Page</title>
+    <meta
+      name="description"
+      content="WDD 131 - Project - Victor Patrick"
+    />
+    <meta name="author" content="Victor Patrick" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="confirmation">
+      <h1>Thank You for Your Feedback!</h1>
+      <p id="feedbackMessage"></p>
+      <p>
+        You have submitted <span id="feedback-count"></span> feedback(s) so far.
+      </p>
+      <a href="index.html" class="back">← Go Back To Home</a>
+    </main>
+
+    <script>
+      const feedbackCount = localStorage.getItem("feedbackCount") || 0;
+      const firstName = localStorage.getItem("feedbackFirstName");
+      const lastName = localStorage.getItem("feedbackLastName");
+
+      document.getElementById("feedback-count").textContent = feedbackCount;
+      document.getElementById(
+        "feedbackMessage"
+      ).textContent = `Thank you, ${firstName} ${lastName}, for your valuable feedback.`;
+    </script>
+  </body>
+</html>
